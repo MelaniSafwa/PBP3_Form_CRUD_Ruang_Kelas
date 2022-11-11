@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#DAD7D7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39mm"
+        android:background="#002A62"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="7mm"
+            android:layout_marginLeft="3mm"
+            android:layout_marginTop="2mm"
+            android:fontFamily="sans-serif"
+            android:text="DATA RUANG FSM"
+            android:textColor="#FFFFFF"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            app:srcCompat="@drawable/patungkuda"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="58dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="3mm"
+        android:layout_marginTop="33mm"
+        android:layout_marginEnd="3mm"
+        android:layout_marginRight="3mm"
+        android:background="@drawable/styles"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="104dp"
+            android:text="Ruang Kelas FSM"
+            android:textAlignment="center"
+            android:textColor="#002A62"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#002A62"/>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#002A62"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@drawable/add"
+        tools:background="#4D99FE"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+
+</RelativeLayout>

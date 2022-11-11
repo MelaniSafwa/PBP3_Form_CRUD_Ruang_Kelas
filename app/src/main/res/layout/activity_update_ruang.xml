@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateRuang"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10mm"
+        android:background="#002A62">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5mm"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="10dp"
+            android:text="Edit Data Ruang"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="17mm"
+            android:layout_marginTop="14mm"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:background="@drawable/noruangan">
+
+            <TextView
+                android:id="@+id/titleNoRuangan"
+                android:layout_width="match_parent"
+                android:layout_height="5mm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="9dp"
+                android:text="Nomor Ruangan"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etNoRuangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleNoRuangan"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:inputType="text"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="17mm"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:background="@drawable/noruangan">
+
+            <TextView
+                android:id="@+id/Kapasitas"
+                android:layout_width="match_parent"
+                android:layout_height="5mm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="9dp"
+                android:text="Kapasitas Ruangan"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etKapasitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Kapasitas"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:inputType="text"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etKapasitas"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="16dp"
+            android:text="simpan"
+            android:backgroundTint="#002A62"/>
+    </LinearLayout>
+</RelativeLayout>
